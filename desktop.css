@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #F3EAE3;
+    font-size: 1.4rem;
+    color: #939499;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #202529;
+    font-weight: 700;
+    font-family: "Fraunces";
+}
+
+.wrapper {
+    width: 1440px;
+    margin: auto;
+}
+
+.card {
+    width: 605px;
+    height: 455px;
+    border-radius: 20px;
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    margin: 3rem;
+}
+
+/* .card__content:nth-child(1) {
+    color: blue;
+} */
+
+.card__picture {
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.product__type {
+    font-family: "Montserrat";
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+.card__title {
+    margin-right: 30px;
+}
+
+.card__text {
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.price__block {
+    display: flex;
+    align-items: center;
+}
+
+.card__price {
+    color: #418169;
+    margin-right: 20px;
+}
+
+.card__previouse-price {
+    font-family: "Montserrat";
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-decoration: line-through;
+}
+
+.btn {
+    border: none;
+    background-color: #418169;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1.6rem;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.btn::before {
+    content: "\f07a";
+    font-family: "FontAwesome";
+    padding-right: 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #1A4031;
+}
