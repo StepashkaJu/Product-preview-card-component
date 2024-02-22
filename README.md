@@ -28,6 +28,7 @@ Users should be able to:
 ![image](https://github.com/StepashkaJu/Product-preview-card-component/assets/121011573/f811c7ad-d5e9-4b34-91da-de6b8c41ffae)
 
 375px
+
 ![image](https://github.com/StepashkaJu/Product-preview-card-component/assets/121011573/9b0d88d3-aecf-4de1-9e20-892200b5fae9)
 
 ### Links
