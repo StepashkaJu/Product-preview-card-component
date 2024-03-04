@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      media="screen and ((min-width: 376px) and (max-width:1440px))"
+      media="screen and ((min-width: 392px) and (max-width:1440px))"
       href="desktop.css"
     />
     <link
@@ -15,7 +15,7 @@
     />
     <link
       rel="stylesheet"
-      media="screen and (max-width: 375px)"
+      media="screen and (max-width: 391px)"
       href="mobile.css"
     />
     <link
@@ -41,7 +41,7 @@
         bottom: 0;
         left: 50%;
         margin-right: -50%;
-        transform: translateX(-50%);
+        transform: translate(-50%);
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -50,8 +50,10 @@
   </head>
   <body>
     <main>
+      <!-- единый блок card, который мы можем переиспользовать несколько раз на странице -->
       <div class="card">
-        <picture class="image">
+        <!-- это уже элемент блока card, т.к. эти картинки с заданными стилями мы будем использовать только внутри этого блока, нигде больше они не подойдут в таком виде  -->
+        <picture class="card__image">
           <source
             srcset="images/image-product-mobile.jpg"
             media="(max-width: 375px)"
@@ -66,17 +68,25 @@
             class="card__picture"
           />
         </picture>
+        <!-- card__content тоже элемент блока card, он так же вряд ли будет использоваться еще где-то кроме этого блока -->
         <div class="card__content">
-          <p class="product__type">PERFUME</p>
+          <!-- хотя productType лежит внутри card__content, он все равно является элементом блока card, поэтому имя блока__имяЭлемента -->
+          <p class="card__productType">PERFUME</p>
+          <!-- очередной элемент -->
           <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
+          <!-- очередной элемент -->
           <p class="card__text">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div class="price__block">
+          <!-- card__priceBlock тоже элемент блока card, он так же вряд ли будет использоваться еще где-то кроме этого блока -->
+          <div class="card__priceBlock">
+            <!-- очередной элемент -->
             <h1 class="card__price">$149.99</h1>
-            <p class="card__previouse-price">$169.99</p>
+            <!-- очередной элемент -->
+            <p class="card__previousePrice">$169.99</p>
           </div>
+          <!-- может использоваться не только внутри блока card, поэтому имя элемента самостоятельное - btn -->
           <button class="btn">Add to Cart</button>
         </div>
       </div>
